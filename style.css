@@ -1,0 +1,32 @@
+body{
+/*background-color:#75AADB ; cor da bandeira da argentina*/
+/*antes de trocar a cor de fundo, prescisa trocar a cor dos btns e hrefs*/
+}
+button{
+    margin: 3px 0px 0px 5px;
+    
+
+}
+#menu{
+    display: flex;
+    margin:0
+}
+#formulario-tela{
+    margin: 20px 0px 20px 35px;
+    display: flex;    
+}
+.inputs {
+    display: block;
+  
+    
+}
+.inputs input{
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+}
+#enviar{
+margin: 10px 10px 12px 10px;
+border-radius: 15% ;
+
+}

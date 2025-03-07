@@ -3,39 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Jr-system</title>
 </head>
 <body>
-<div class="nav-bar">
+    <!--navbar-->
+    <nav class="nav nav-pills flex-column flex-sm-row">
+        <!--Offcanvas-->
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Menu</button>
 
-</div>
-<div class="menu">
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quod autem, aliquid ab molestias quia ea at vitae similique quos temporibus quo, ipsam quisquam beatae cumque nobis officia. Nisi, repellendus.</li>
+            </ul>
+          </div>
+        </div>
+            <!--menu navbar links-->
+        <a class="flex-sm-fill text-sm-center nav-link" href="#">Test</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="#">Test</a>
+        <a class="flex-sm-fill text-sm-center nav-link disabled" aria-disabled="true">Desativado</a>
+      </nav>
 
-</div>
-    <form action="" method="post">
+    <!--Tela com o formulario pronto e a separaçao das telas-->
+   
+          <div id="formulario-tela">
+            <form action="" method="post" >
+                <div class="inputs">
 
-    <input type="number" name="" id=""  placeholder="CodSistema">
-    <input type="text" name="" id="" placeholder="Descrição">
-    <input type="text" name="" id="" placeholder="Usuario">
-    <input type="number" name="cpf-cnpj" id="" placeholder="Cpf-cnpj">
-    <input type="number" name="cep" id="" placeholder="Cep">
-    <input type="text" name="" id="" placeholder="Logradouro">
-    <input type="number" name="" id="" placeholder="NumLog">
-    <input type="number" name="" id="" placeholder="Complemento" >
-    <input type="text" name="" id="" placeholder="Bairro">
-    <input type="text" name="" id="" placeholder="Municipio">
-    <input type="text" name="" id="" placeholder="UF">
-    <input type="number" name="" id="" placeholder="DDD">
-    <input type="number" name="" id="" placeholder="Telefone">
-    <input type="email" name="" id="" placeholder="Email">
-    <input type="text" name="" id="" placeholder="Contato">
-    <input type="text" name="" id="" placeholder="Industria">
-    <input type="text" name="" id="" placeholder="Comercio">
-    <input type="text" name="" id="" placeholder="Serviços">
-    <input type="text" name="" id="" placeholder="OptSimples">
+                <label for="CodSistema">Codigo do Sistema: 
+                <input type="text" name="CodSistema" id="CodSistema"  placeholder="CodSistema"></label>
+                
+                <label for="Descrição">Descrição:
+                <input type="text" name="Descrição" id="Descrição" placeholder="Descrição">  </label>
+                
+                <label for="Usuario">Usuario: 
+                <input type="text" name="Usuario" id="Usuario" placeholder="Usuario"> </label>
+                
+                <label for="CpfCnpj">CPF/CNPJ:
+                <input type="text" name="cpf-cnpj" id="" placeholder="Cpf-cnpj"> </label>
 
-    <input type="submit" value="Enviar" >
-</form>
+                <label for="Cep">Cep:
+                <input type="text" name="Cep" id="" placeholder="Cep"> </label>
 
+                <label for="Logradouro">Logradouro: 
+                <input type="text" name="Logradouro" id="" placeholder="Logradouro"> </label>
+
+                <label for="NumLog">NumLog: 
+                <input type="text" name="NumLog" id="" placeholder="NumLog"> </label>
+
+                <label for="Complemento">Complemento: 
+                <input type="text" name="Complemento" id="" placeholder="Complemento" > </label>
+
+                <label for="Bairro">Bairro: 
+                <input type="text" name="Bairro" id="" placeholder="Bairro"> </label>
+                
+                <label for="Municipio">Municipio: 
+                <input type="text" name="Municipio" id="" placeholder="Municipio"> </label>
+                
+                <label for="UF">UF: 
+                <input type="text" name="UF" id="" placeholder="UF"> </label>
+                
+                <label for="DDD">DDD: 
+                <input type="text" name="DDD" id="" placeholder="DDD"> </label>
+                
+                <label for="Telefone">Telefone:
+                <input type="text" name="Telefone" id="" placeholder="Telefone"> </label>
+                
+                <label for="Email">Email: 
+                <input type="email" name="Email" id="" placeholder="email123@email.com"> </label>
+                
+                <label for="Contato">Contato: 
+                <input type="text" name="Contato" id="" placeholder="Contato"> </label>
+                
+                <label for="Industria">Industria: 
+                <input type="text" name="Industria" id="" placeholder="Industria"> </label>
+                
+                <label for="Comercio">Comercio: 
+                <input type="text" name="Comercio" id="" placeholder="Comercio"> </label>
+                
+                <label for="Serviços">Serviços :
+                <input type="text" name="Serviços" id="" placeholder="Serviços"> </label>
+                
+                <label for="OptSimples">OptSimples : 
+                <input type="text" name="OptSimples" id="" placeholder="OptSimples"> </label>
+                
+                <button class="btn btn-primary btn-sm" type="submit" value="Submit" id="enviar">Enviar</button>
+            </form>
+        </div>
+         </div>
+         
+
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
